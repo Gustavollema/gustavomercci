@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+:root {
+    --color-text: #000;
+    --background-color: #F0F0F0;
+}
+
+#darkmodeToogle:checked + main{
+    --color-text: #fff;
+    --background-color: #000;
+
+    background-color: var(--background-color);
+    color: var(--color-text);
+
+    transition: .5s ease-in-out background, .5s ease-in-out color;
+}
+#darkmodeToogle:checked + main .darkmodeLabel:after{
+content: ': On'
+}
+#darkmodeToogle {
+    display:none
+}
+
+main {
+    
+    background-color: var(--background-color);
+    color: var(--color-text);
+    position: absolute;
+    width: 100%;
+    transition: .5s ease-in-out background, .5s ease-in-out color;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 290px;
+}
+.nav-menu-item {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.darkmodeLabel {
+    cursor: pointer;
+}
+
+.darkmodeLabel:after {
+    content: ': Off'
+}
+
+#title {
+margin-top: 100px;
+margin-left: 290px;
+font-size: 40px;
+}
+
+#subtitle {
+    margin-left: 290px; 
+}
+
+#image {
+    margin-top: -130px;
+    width: 600px;
+    height: 600px;
+}
+
+.conteudo-principal {
+
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.container {
+    width: 1368px;
+}
+
